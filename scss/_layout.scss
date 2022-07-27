@@ -1,0 +1,93 @@
+body {
+    background: $secondary;
+}
+
+.header {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    @include w-md {
+        width: 100%;
+    }
+
+    @include w-sm {
+        width: 100%;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.75);
+    //在.header加相對定位，並在手機版menu下絕對定位(ul就可依header範圍當作座標點
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    h1 a {
+        // logo圖片取代文字
+        @include hide-text;
+        display: block;
+        background: url(../images/logo_w.png);
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 24px;
+        margin: 0.8em;
+    }
+}
+
+// 漢堡選單 (平板/手機開啟,PC關閉)
+.showmenu {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+
+    @include w-md {
+        display: block;
+        margin: .5em .8em;
+    }
+}
+
+.menu {
+    display: flex;
+    margin-right: 16px;
+
+    a {
+        display: block;
+        color: #fff;
+        padding: 1em;
+        // 用transparent消除hover跳動
+        border-bottom: 2px solid transparent;
+        //使用『&』來選擇父層
+        &:hover {
+            border-bottom: 2px solid $secondary;
+        }
+    }
+
+    @include w-md {
+        //絕對定位疊在網頁上，並將權重顯示在最上方
+        position: absolute;
+        //讓選單出現時有transition漸變過渡高度
+        transition: max-height 2.3s;
+        //隱藏選單開始(把高度設為0，將高度0以外的地方也設隱藏)
+        max-height: 0px;
+        overflow: hidden;
+        z-index: 100;
+        flex-direction: column;
+        top: 51px;
+        // 將寬度設為(滿版)100%
+        width:100%;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.75);
+        //點選連結的漸變加速，營造a:hover點擊後背景持續效果
+        a {
+            transition: all 0.5s;
+        }
+    }
+
+}
+
+// jQ點擊後動態在 body 加上 class
+.menu-show .menu {
+    max-height: 350px;
+}
