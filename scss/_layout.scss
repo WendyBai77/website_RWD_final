@@ -58,6 +58,7 @@ body {
         padding: 1em;
         // 用transparent消除hover跳動
         border-bottom: 2px solid transparent;
+
         //使用『&』來選擇父層
         &:hover {
             border-bottom: 2px solid $secondary;
@@ -76,18 +77,47 @@ body {
         flex-direction: column;
         top: 51px;
         // 將寬度設為(滿版)100%
-        width:100%;
+        width: 100%;
         align-items: center;
         background: rgba(0, 0, 0, 0.75);
+
         //點選連結的漸變加速，營造a:hover點擊後背景持續效果
-        a {
-            transition: all 0.5s;
+        li {
+            width: 100%;
         }
+
+        a {
+            text-align: center;
+            transition: all 0.3s;
+            &:hover {
+                background: rgba(205, 60, 60, 0.3);
+            }
+        }
+
+    }
+}
+    // jQ點擊後動態在 body 加上 class
+    .menu-show .menu {
+        max-height: 350px;
     }
 
-}
+    //banner
+    .banner {
+        background: url(../images/header_desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 1024px;
+        height: 420px;
+        margin: 0 auto;
+        background-position: center center;
+        display: flex;
+        align-items: center;
+        text-align: center;
 
-// jQ點擊後動態在 body 加上 class
-.menu-show .menu {
-    max-height: 350px;
-}
+        .bannerContent {
+            background: rgba(0, 0, 0, 0.35);
+            color: #fff;
+            z-index: 30;
+            width: 100%;
+        }
+    }
