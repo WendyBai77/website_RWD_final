@@ -10,13 +10,15 @@
     }
 }
 
+
 @mixin w-sm {
-    @media (max-width: 576px) {
+    @media (max-width: 568px) {
         @content;
     }
 }
 
-@mixin w-sx {
+
+@mixin w-xs {
     @media (max-width:360px) {
         @content;
     }
