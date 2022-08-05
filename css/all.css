@@ -550,16 +550,16 @@ body {
   }
 }
 
-form {
+.form-booking {
   display: flex;
   flex-direction: column;
   width: 40%;
   margin: 0 15px;
 }
-form label {
+.form-booking label {
   margin-bottom: 8px;
 }
-form input {
+.form-booking input {
   margin-bottom: 12px;
   padding: 6px 10px;
   border: 1px solid #c7c7c7;
@@ -619,7 +619,7 @@ form input {
 }
 .nav-list h3 span {
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .nav-list .menu {
@@ -881,4 +881,267 @@ form input {
   border-radius: 3px;
   cursor: pointer;
   /*按鈕滑過去的時候 游標會變成手指點擊圖案*/
+}
+
+.login-content {
+  max-width: 1024px;
+  margin: 0 auto;
+  color: #3d1101;
+}
+.login-content h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 30px;
+}
+.login-content h2 span {
+  font-size: 20px;
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.login-content .form {
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+  border-top: 5px solid #F56C23;
+  justify-content: space-between;
+  padding: 5px 11px 11px 15px;
+  width: 35%;
+  margin: 15px auto;
+}
+.login-content .form h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .login-content .form {
+    width: 50%;
+  }
+}
+@media (max-width: 568px) {
+  .login-content .form {
+    width: 70%;
+  }
+}
+@media (max-width: 360px) {
+  .login-content .form {
+    width: 98%;
+  }
+}
+.login-content .login-container {
+  display: flex;
+  justify-content: center;
+}
+.login-content .login-container p {
+  font-size: 18px;
+  width: 45%;
+}
+.login-content .login-container p span {
+  display: block;
+  font-size: 16px;
+  margin-top: 3px;
+}
+@media (max-width: 768px) {
+  .login-content .login-container p {
+    width: 35%;
+  }
+}
+@media (max-width: 568px) {
+  .login-content .login-container p {
+    width: 100%;
+  }
+}
+@media (max-width: 568px) {
+  .login-content .login-container {
+    flex-direction: column;
+  }
+}
+.login-content .form-reg {
+  width: 90%;
+}
+.login-content .form-reg .input-wrap {
+  display: flex;
+  position: relative;
+}
+.login-content .form-reg .input-wrap:nth-child(2) {
+  margin-bottom: 20px;
+}
+.login-content .form-reg .input-wrap input {
+  width: 100%;
+  padding: 8px 28px;
+  border: 1px solid #CCCCCC;
+  box-shadow: inset 0px 1px 0px 0px #ECECEC;
+  border-radius: 3px;
+}
+.login-content .form-reg .input-wrap i {
+  position: absolute;
+  margin-left: 8px;
+  padding: 9px 0px;
+}
+@media (max-width: 768px) {
+  .login-content .form-reg {
+    width: 95%;
+  }
+}
+@media (max-width: 568px) {
+  .login-content .form-reg {
+    width: 100%;
+    margin-top: 1.2em;
+  }
+}
+.login-content a {
+  color: #FF5E45;
+  font-size: 14px;
+  margin-bottom: 18px;
+  display: block;
+}
+.login-content .login-button {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px auto;
+  text-align: center;
+}
+.login-content .login-button a {
+  display: block;
+  width: 33%;
+  padding: 5px 8px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.login-content .login-button a:nth-child(1) {
+  background: #FF5E45;
+}
+.login-content .login-button a:nth-child(2) {
+  background: rgb(148, 148, 148);
+}
+@media (max-width: 568px) {
+  .login-content .login-button {
+    width: 100%;
+    margin: 5px auto;
+  }
+}
+
+.register-content {
+  max-width: 1024px;
+  margin: 0 auto;
+  color: #3d1101;
+}
+.register-content h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 30px;
+}
+.register-content h2 span {
+  font-size: 20px;
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.register-content .form {
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+  border-top: 5px solid #F56C23;
+  justify-content: space-between;
+  padding: 5px 11px 11px 15px;
+  width: 60%;
+  margin: 15px auto;
+}
+.register-content .form h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .register-content .form {
+    width: 70%;
+  }
+}
+@media (max-width: 360px) {
+  .register-content .form {
+    width: 98%;
+  }
+}
+.register-content .register-container {
+  display: flex;
+  justify-content: space-between;
+}
+.register-content .register-container p {
+  font-size: 18px;
+  width: 45%;
+}
+.register-content .register-container p span {
+  display: block;
+  font-size: 16px;
+  margin-top: 3px;
+}
+@media (max-width: 768px) {
+  .register-content .register-container p {
+    width: 35%;
+  }
+}
+@media (max-width: 568px) {
+  .register-content .register-container p {
+    width: 100%;
+  }
+}
+@media (max-width: 568px) {
+  .register-content .register-container {
+    flex-direction: column;
+  }
+}
+.register-content .form-reg {
+  width: 50%;
+}
+.register-content .form-reg .input-wrap {
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+}
+.register-content .form-reg .input-wrap input {
+  width: 100%;
+  padding: 8px 28px;
+  border: 1px solid #CCCCCC;
+  box-shadow: inset 0px 1px 0px 0px #ECECEC;
+  border-radius: 3px;
+}
+.register-content .form-reg .input-wrap i {
+  position: absolute;
+  margin-left: 8px;
+  padding: 9px 0px;
+}
+@media (max-width: 768px) {
+  .register-content .form-reg {
+    width: 60%;
+  }
+}
+@media (max-width: 568px) {
+  .register-content .form-reg {
+    width: 100%;
+    margin-top: 1.2em;
+  }
+}
+.register-content a {
+  color: #FF5E45;
+  font-size: 14px;
+  margin-bottom: 18px;
+  display: block;
+}
+.register-content .btn-reg {
+  display: block;
+  width: 40%;
+  padding: 5px;
+  margin-left: auto;
+  background: #FF5E45;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+@media (max-width: 568px) {
+  .register-content .btn-reg {
+    width: 50%;
+    margin: 5px auto;
+  }
 }/*# sourceMappingURL=all.css.map */
