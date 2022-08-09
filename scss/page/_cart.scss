@@ -51,8 +51,8 @@
     }
 
     @include w-sm {
-        width: 80%;
-        text-align: center;
+        width: 100%;
+        text-align: left;
     }
 }
 
@@ -305,11 +305,17 @@
 
 
     button {
-        padding: 2px 60px;
+        padding: 2px 30px;
+        text-align: center;
+        white-space: nowrap;
         color: #FF5E45;
         border: 1px solid #FF5E45;
         border-radius: 3px;
         cursor: pointer;
         /*按鈕滑過去的時候 游標會變成手指點擊圖案*/
+        &:hover{
+            background: #FF5E45;
+            color: #fff;
+        }
     }
 }

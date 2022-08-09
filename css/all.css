@@ -75,13 +75,13 @@ body {
 }
 
 .header {
-  max-width: 1024px;
-  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.75);
 }
 .header .container {
+  max-width: 1024px;
+  margin: 0 auto;
   width: 100%;
   height: 50px;
-  background: rgba(0, 0, 0, 0.75);
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -392,13 +392,13 @@ body {
 }
 
 .chef {
-  max-width: 1024px;
-  margin: 50px auto;
   background: #3d1101;
   color: #efe9e7;
-  padding: 0 1.5em;
 }
 .chef .container {
+  max-width: 1024px;
+  margin: 50px auto;
+  padding: 0 1.5em;
   display: flex;
 }
 .chef .container .img {
@@ -438,10 +438,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0;
   }
   .chef .container img {
     width: 100%;
-    margin-top: 1em;
   }
 }
 
@@ -642,8 +642,8 @@ body {
 }
 @media (max-width: 568px) {
   .nav-list {
-    width: 80%;
-    text-align: center;
+    width: 100%;
+    text-align: left;
   }
 }
 
@@ -875,12 +875,18 @@ body {
   font-weight: bold;
 }
 .product-content button {
-  padding: 2px 60px;
+  padding: 2px 30px;
+  text-align: center;
+  white-space: nowrap;
   color: #FF5E45;
   border: 1px solid #FF5E45;
   border-radius: 3px;
   cursor: pointer;
   /*按鈕滑過去的時候 游標會變成手指點擊圖案*/
+}
+.product-content button:hover {
+  background: #FF5E45;
+  color: #fff;
 }
 
 .login-content {
@@ -989,7 +995,7 @@ body {
     margin-top: 1.2em;
   }
 }
-.login-content a {
+.login-content .text-link {
   color: #FF5E45;
   font-size: 14px;
   margin-bottom: 18px;
@@ -1001,7 +1007,21 @@ body {
   margin: 20px auto;
   text-align: center;
 }
-.login-content .login-button a {
+.login-content .login-button .btn-reg {
+  display: block;
+  width: 33%;
+  padding: 8px 8px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  background: rgb(148, 148, 148);
+}
+.login-content .login-button .btn-reg:hover {
+  opacity: 0.8;
+}
+.login-content .login-button .btn-login {
   display: block;
   width: 33%;
   padding: 5px 8px;
@@ -1009,12 +1029,11 @@ body {
   border: none;
   border-radius: 3px;
   cursor: pointer;
-}
-.login-content .login-button a:nth-child(1) {
+  font-size: 14px;
   background: #FF5E45;
 }
-.login-content .login-button a:nth-child(2) {
-  background: rgb(148, 148, 148);
+.login-content .login-button .btn-login:hover {
+  opacity: 0.8;
 }
 @media (max-width: 568px) {
   .login-content .login-button {
@@ -1137,7 +1156,11 @@ body {
   color: #fff;
   border: none;
   border-radius: 3px;
+  font-size: 14px;
   cursor: pointer;
+}
+.register-content .btn-reg:hover {
+  opacity: 0.8;
 }
 @media (max-width: 568px) {
   .register-content .btn-reg {

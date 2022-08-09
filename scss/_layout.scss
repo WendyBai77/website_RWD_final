@@ -3,13 +3,12 @@ body {
 }
 
 .header {
-    max-width: 1024px;
-    margin: 0 auto;
-
+    background: rgba(0, 0, 0, 0.75);
     .container {
+        max-width: 1024px;
+        margin: 0 auto;
         width: 100%;
         height: 50px;
-        background: rgba(0, 0, 0, 0.75);
         //在.header加相對定位，並在手機版menu下絕對定位(ul就可依header範圍當作座標點
         position: relative;
         display: flex;

@@ -106,7 +106,7 @@
         }
     }
 
-    a {
+    .text-link {
         color: #FF5E45;
         font-size: 14px;
         margin-bottom: 18px;
@@ -118,7 +118,22 @@
         justify-content: space-evenly;
         margin: 20px auto;
         text-align: center;
-        a {
+        .btn-reg {
+            display: block;
+            width: 33%;
+            padding: 8px 8px;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+            background: rgb(148, 148, 148);
+            &:hover {
+            opacity: 0.8;
+            }
+        }
+       
+        .btn-login {
             display: block;
             width: 33%;
             padding: 5px 8px;
@@ -126,15 +141,39 @@
             border: none;
             border-radius: 3px;
             cursor: pointer;
-
-            &:nth-child(1) {
-                background: #FF5E45;
-            }
-
-            &:nth-child(2) {
-                background: rgb(148, 148, 148)
+            font-size: 14px;
+            background: #FF5E45;
+            &:hover {
+            opacity: 0.8;
             }
         }
+
+
+        // .login-button {
+        //     display: flex;
+        //     justify-content: space-evenly;
+        //     margin: 20px auto;
+        //     text-align: center;
+        //     .btn-reg , .btn-login {
+        //         display: block;
+        //         width: 33%;
+        //         padding: 5px 8px;
+        //         color: #fff;
+        //         border: none;
+        //         border-radius: 3px;
+        //         cursor: pointer;
+        //         font-size: 14px;
+        //         &:hover {
+        //         opacity: 0.8;
+        //         }
+        //     }
+        //     .btn-reg {
+        //         background: rgb(148, 148, 148);
+        //     }
+           
+        //     .btn-login{
+        //         background: #FF5E45;
+        //     }
 
         @include w-sm {
             width: 100%;

@@ -129,13 +129,12 @@
 }
 
 .chef {
-    max-width: 1024px;
-    margin: 50px auto;
     background: $primary;
     color: $secondary;
-    padding: 0 1.5em;
-
     .container {
+        max-width: 1024px;
+        margin: 50px auto;
+        padding: 0 1.5em;
         display: flex;
 
         .img {
@@ -182,10 +181,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
+            padding: 0;
             img {
                 width: 100%;
-                margin-top: 1em;
             }
 
         }
