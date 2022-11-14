@@ -1,7 +1,7 @@
 RWD響應式網頁設計 切版練習
 ===
 ### Project 說明
-### 使用JavaScipt、jQuery和 RWD響應式網頁設計，並導入SASS/SCSS，練習網頁(首頁、訂購頁、登入頁)切版。
+### 練習網頁(首頁/訂購頁/登入頁)切版：使用JavaScipt、jQuery和 RWD響應式網頁設計，並導入SASS/SCSS。
 
 ---
 ### 學習紀錄
